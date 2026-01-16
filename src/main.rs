@@ -251,7 +251,7 @@ fn borrow_book(library: &mut Library) {
             }
             book.copies_available -= 1;
             title = book.title.clone();
-        } // ✅ mutable borrow ends here
+        } 
 
         if let Err(err) = save_data(library) {
         eprintln!("Warning: could not save data: {err}");
@@ -290,7 +290,7 @@ fn return_book(library: &mut Library) {
         }
         book.copies_available += 1;
         title = book.title.clone();
-    } // ✅ mutable borrow ENDS HERE
+    } 
 
     if let Err(err) = save_data(library) {
         eprintln!("Warning: could not save data: {err}");
