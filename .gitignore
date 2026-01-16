@@ -1,0 +1,8 @@
+# Rust build artifacts
+/target
+
+# Runtime data
+library_data.json
+
+# macOS junk
+.DS_Store
